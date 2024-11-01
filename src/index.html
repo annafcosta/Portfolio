@@ -7,63 +7,80 @@
     <title>Title</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header_container">
-            <div class="logo_title">
-                <h1>Anna Ferreira</h1>
-            </div>
-            <div class="header_main">
-                <nav>
-                    <a class="button_home" href="#home">HOME</a>
-                    <a class="button_home" href="#about">SOBRE</a>
-                    <a class="button_home" href="#projects">PROJETOS</a>
-                    <a class="button_home" href="#contact">CONTATO</a>
-                </nav>
-            </div>
+<header class="header">
+    <div class="header_container">
+        <div class="logo_title">
+            <h1>Anna Ferreira</h1>
         </div>
-        <div class="social_media">
-            <a href="https://www.instagram.com/anna_afcosta/" target="_blank" class="social-icon">
-                <img src="./svg/Instagram-05.svg" alt="Instagram">
-            </a>
-            <a href="https://github.com/annafcosta" target="_blank" class="social-icon">
-                <img src="./svg/github-dark.svg" alt="GitHub"/>
-            </a>
-            <a href="https://www.linkedin.com/in/anna-lu%C3%ADsa-ferreira-2a6436290/" target="_blank" class="social-icon">
-                <img src="./svg/linkedin-dark.svg" alt="LinkedIn" />
-            </a>
+        <div class="header_main">
+            <nav>
+                <a class="button_home" href="#home">HOME</a>
+                <a class="button_home" href="#about">SOBRE</a>
+                <a class="button_home" href="#projects">PROJETOS</a>
+                <a class="button_home" href="#contact">CONTATO</a>
+            </nav>
         </div>
-    </header>
-    <section id="home" class="home-greetings">
-        <div class="home-greeting_container">
-            <h2> Olá! Sou Anna Luisa</h2>
-            <p></p>
-            <a href="#projects">MEUS PROJETOS</a>
-        </div>
-    </section>
-    <section id="about" class="about-section">
-        <div class="about-section_container">
-            <h2>SOBRE MIM</h2>
-            <hr class="separator">
-            <p>A física me ensinou a decifrar o mundo, e a computação me permite<br>
-                construir soluções inovadoras para ele.</p>
-        </div>
-        <div class="about-section_text">
-            <h2>Conheça mais sobre mim!</h2>
-            <p>Sou uma estudante de <strong>Física</strong> na Universidade<br>
-                Federal de Viçosa - Campus Florestal.
-            </p>
-        </div>
-    </section>
-    <section id="projects" class="projects-section">
-        <h2>Meus Projetos</h2>
-        <p>Informações dos principais projetos.</p>
-        <div class="projects-section_container"></div>
-    </section>
-    <section id="contact" class="contact-section">
-        <div class="contact-section_container">
-            <h2>Contato</h2>
-            <p>Informações para contato.</p>
-        </div>
-    </section>
+    </div>
+</header>
+<section id="home" class="home-greetings">
+    <div class="home-greeting_container">
+        <h2> Olá! Sou Anna Luisa</h2>
+        <p></p>
+        <a href="#projects">MEUS PROJETOS</a>
+    </div>
+    <div class="social_media hidden">
+        <a href="https://www.instagram.com/anna_afcosta/" target="_blank" class="social-icon">
+            <img class="instagram" src="./images/Instagram-05.png" alt="Instagram">
+        </a>
+        <a href="https://github.com/annafcosta" target="_blank" class="social-icon">
+            <img class="git" src="./images/github.1024x999.png" alt="GitHub"/>
+        </a>
+        <a href="https://www.linkedin.com/in/anna-lu%C3%ADsa-ferreira-2a6436290/" target="_blank" class="social-icon">
+            <img class="linkedin" src="./images/linkedin.png" alt="LinkedIn"/>
+        </a>
+        <a href="mailto:anna.l.costa@ufv.br" target="_blank" class="social-icon">
+            <img class="email" src="./images/gmail-email.png" alt="E-mail"/>
+        </a>
+    </div>
+</section>
+<script>
+    document.addEventListener("scroll", function() {
+        const homeSection = document.querySelector("#home");
+        const socialMedia = document.querySelector(".social_media");
+
+        const homePosition = homeSection.getBoundingClientRect();
+
+        if (homePosition.top >= 0 && homePosition.bottom <= window.innerHeight) {
+            socialMedia.classList.remove("hidden");
+        } else {
+            socialMedia.classList.add("hidden");
+        }
+    });
+</script>
+<section id="about" class="about-section">
+    <div class="about-section_container">
+        <h2>SOBRE MIM</h2>
+        <hr class="separator">
+        <p>A física me ensinou a decifrar o mundo, e a computação me permite<br>
+            construir soluções inovadoras para ele.</p>
+    </div>
+    <div class="about-section_text">
+        <h2>Venha me conhecer!</h2>
+        <p>Sou uma estudante de <strong>Física</strong> na Universidade<br>
+            Federal de Viçosa - Campus Florestal.
+        </p>
+    </div>
+</section>
+<section id="projects" class="projects-section">
+    <h2>Meus Projetos</h2>
+    <p>Informações dos principais projetos.</p>
+    <div class="projects-section_container"></div>
+</section>
+<section id="contact" class="contact-section">
+    <div class="contact-section_container">
+        <h2>Contato</h2>
+        <p>Informações para contato.</p>
+    </div>
+</section>
 </body>
 </html>

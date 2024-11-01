@@ -66,7 +66,46 @@ a:hover {
 }
 /* SOCIAL ICON FORMATTING*/
 
+.social_media {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transform: translateY(-50%);
+    left: 0;
+    top: 50%;
+    gap: 30px;
+    padding: 20px 20px 20px 20px;
+    border: white solid 2px;
+    border-radius: 0 15px 15px 0;
+    background-color: white;
+}
 
+.hidden {
+    display: none;
+}
+
+.instagram, .git{
+    width: 35px;
+    height: auto;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.linkedin, .email {
+    width: 41px;
+    height: auto;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_media img:hover {
+    border: #BFA2DB solid 1px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
 
 /* HOME FORMATTING */
 
@@ -95,8 +134,8 @@ a:hover {
     color: #424141;
     letter-spacing: 2px;
     text-decoration: none;
-    border: #F3F1F5 solid 2px;
-    background-color: #F3F1F5;
+    border: white solid 2px;
+    background-color: white;
     border-radius: 10px;
     padding: 7px 25px;
     transition: all 0.2s ease-in-out;
@@ -104,8 +143,8 @@ a:hover {
 
 .home-greeting_container a:hover {
     color: #424141;
-    border: #F3F1F5 solid 2px;
-    background-color: #F3F1F5;
+    border: white solid 2px;
+    background-color: white;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
