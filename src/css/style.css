@@ -158,16 +158,28 @@ a:hover {
     height: 100vh;
     width: 100vw;
     justify-content: flex-start;
+    align-items: center;
     padding-top: 100px;
     flex-direction: column;
 }
 
-.about-section_container,
-.about-section_text {
+.about-section_container {
     width: 100%;
     max-width: 1300px;
-    padding: 10px;
     margin: 0 auto;
+}
+
+.home-text-skills {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.about-section_text, .about-skills {
+    flex: 1;
+    max-width: 600px;
 }
 
 .about-section_container h2 {
@@ -179,6 +191,10 @@ a:hover {
     color: #424141;
     letter-spacing: 2px;
     text-align: center;
+}
+
+.about-section_text {
+    margin-right: 70px;
 }
 
 .separator {
@@ -206,19 +222,19 @@ a:hover {
     color: #424141;
     letter-spacing: 2px;
     text-align: left;
-    margin-top: 45px;
+    margin-top: 35px;
 }
 
 .about-section_text p {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     line-height: 1.5;
     font-weight: 400;
     color: #5f5c62;
     text-align: left;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 45px;
 }
 
 .about-section_text a {
@@ -245,8 +261,31 @@ a:hover {
     border-radius: 10px;
     padding: 9px 28px;
     cursor: pointer;
-    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
-    transform: scale(2.0);
+}
+.about-skills h3 {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #424141;
+    letter-spacing: 2px;
+    margin: 35px 0 40px 180px;
+}
+.about-skills a {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-right: 20px;
+    color: white;
+    border: #BFA2DB solid 2px;
+    border-radius: 10px;
+    background-color: #BFA2DB;
+    padding: 5px;
+}
+
+.about-skills div {
+    margin: 10px 0 30px 180px;
 }
 
 
