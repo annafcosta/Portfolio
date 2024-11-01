@@ -218,6 +218,37 @@ a:hover {
     color: #5f5c62;
     text-align: left;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
+
+.about-section_text a {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
+    padding: 7px 25px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.about-section_text a:hover {
+    color: white;
+    font-size: 20px;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
+    padding: 9px 28px;
+    cursor: pointer;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
+    transform: scale(2.0);
+}
+
+
 
 

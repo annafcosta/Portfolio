@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="./script.js"></script>
     <title>Title</title>
 </head>
 <body>
@@ -43,20 +44,6 @@
         </a>
     </div>
 </section>
-<script>
-    document.addEventListener("scroll", function() {
-        const homeSection = document.querySelector("#home");
-        const socialMedia = document.querySelector(".social_media");
-
-        const homePosition = homeSection.getBoundingClientRect();
-
-        if (homePosition.top >= 0 && homePosition.bottom <= window.innerHeight) {
-            socialMedia.classList.remove("hidden");
-        } else {
-            socialMedia.classList.add("hidden");
-        }
-    });
-</script>
 <section id="about" class="about-section">
     <div class="about-section_container">
         <h2>SOBRE MIM</h2>
@@ -69,6 +56,7 @@
         <p>Sou uma estudante de <strong>Física</strong> na Universidade<br>
             Federal de Viçosa - Campus Florestal.
         </p>
+        <a href="#contact">CONTATO</a>
     </div>
 </section>
 <section id="projects" class="projects-section">
