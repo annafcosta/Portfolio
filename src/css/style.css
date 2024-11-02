@@ -4,12 +4,33 @@
 
 /* General formatting */
 
-html, body {
+*, *:before, *:after {
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; }
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 59%; } }
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 56%; } }
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 65%; } }
+
+body {
     margin: 0;
-    width: 100%;
     background-color: #F3F1F5;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 1.5;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* NAV FORMATTING */
@@ -37,7 +58,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5px;
+    padding: 30px 5px;
 }
 
 nav {
@@ -84,20 +105,19 @@ a:hover {
     display: none;
 }
 
-.instagram, .git{
+.instagram, .linkedin{
     width: 35px;
     height: auto;
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
 }
 
-.linkedin, .email {
-    width: 41px;
+.git, .email {
+    width: 37px;
     height: auto;
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
 }
-
 .social_media img:hover {
     border: #BFA2DB solid 1px;
     background-color: #BFA2DB;
@@ -124,6 +144,7 @@ a:hover {
     font-weight: 500;
     color: #424141;
     letter-spacing: 2px;
+    margin-bottom: 30px;
 }
 
 .home-greeting_container a {
@@ -147,8 +168,7 @@ a:hover {
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+    padding: 10px 30px;
 }
 
 /* ABOUT FORMATTING */
@@ -161,6 +181,7 @@ a:hover {
     align-items: center;
     padding-top: 100px;
     flex-direction: column;
+    background-color: #F3F1F5;
 }
 
 .about-section_container {
@@ -177,11 +198,12 @@ a:hover {
     width: 100%;
 }
 
-.about-section_text, .about-skills {
+#about-section_text, .about-skills {
     flex: 1;
     max-width: 600px;
 }
 
+/* ABOUT TITLE FORMATTING */
 .about-section_container h2 {
     font-size: 50px;
     font-family: "Poppins", sans-serif;
@@ -193,15 +215,15 @@ a:hover {
     text-align: center;
 }
 
-.about-section_text {
+#about-section_text {
     margin-right: 70px;
 }
 
-.separator {
-    width: 10%;
+.about-section_container hr {
+    width: 60%;
     height: 2px;
     background-color: #BFA2DB;
-    padding-top: 5px;
+    padding: 3px;
     border-radius: 10px;
 }
 
@@ -215,7 +237,7 @@ a:hover {
     margin-top: 30px;
 }
 
-.about-section_text h2 {
+#about-section_text h2 {
     font-size: 25px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -225,7 +247,7 @@ a:hover {
     margin-top: 35px;
 }
 
-.about-section_text p {
+#about-section_text p {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
@@ -237,7 +259,7 @@ a:hover {
     margin-bottom: 45px;
 }
 
-.about-section_text a {
+#about-section_text a {
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     letter-spacing: 2px;
@@ -253,7 +275,7 @@ a:hover {
     text-decoration: none;
 }
 
-.about-section_text a:hover {
+#about-section_text a:hover {
     color: white;
     font-size: 20px;
     border: #BFA2DB solid 2px;
@@ -262,7 +284,10 @@ a:hover {
     padding: 9px 28px;
     cursor: pointer;
 }
-.about-skills h3 {
+
+/* Skills formatting */
+
+#about-skills h3 {
     font-size: 25px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -270,24 +295,72 @@ a:hover {
     letter-spacing: 2px;
     margin: 35px 0 40px 180px;
 }
-.about-skills a {
+
+#about-skills a {
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     letter-spacing: 2px;
     line-height: 1.5;
     font-weight: 400;
-    margin-right: 20px;
     color: white;
     border: #BFA2DB solid 2px;
     border-radius: 10px;
     background-color: #BFA2DB;
     padding: 5px;
+    margin: 0 20px 0 0;
+    text-decoration: none;
 }
 
-.about-skills div {
+#about-skills div {
     margin: 10px 0 30px 180px;
 }
 
+/* PROJECT FORMATTING */
 
+.projects-section {
+    display: flex;
+    background-color: #f2ecf8;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.projects-section_container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.projects-section h2 {
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.projects-section_container hr{
+    width: 10%;
+    height: 2px;
+    background-color: #BFA2DB;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.projects-section p {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #5f5c62;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 30px;
+}
 
 
