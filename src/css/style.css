@@ -10,20 +10,31 @@
 }
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth; }
+    scroll-behavior: smooth;
+}
+
 @media only screen and (max-width: 75em) {
     html {
-        font-size: 59%; } }
+        font-size: 62%;
+    }
+}
+
 @media only screen and (max-width: 56.25em) {
     html {
-        font-size: 56%; } }
+        font-size: 65%;
+    }
+}
+
 @media only screen and (min-width: 112.5em) {
     html {
-        font-size: 65%; } }
+        font-size: 68%;
+    }
+}
 
 body {
     margin: 0;
+    height: 100vh;
+    width: 100vw;
     background-color: #F3F1F5;
     box-sizing: border-box;
     position: relative;
@@ -85,6 +96,7 @@ a:hover {
     font-weight: 700;
     cursor: default;
 }
+
 /* SOCIAL ICON FORMATTING*/
 
 .social_media {
@@ -105,7 +117,7 @@ a:hover {
     display: none;
 }
 
-.instagram, .linkedin{
+.instagram, .linkedin {
     width: 35px;
     height: auto;
     opacity: 0.7;
@@ -118,6 +130,7 @@ a:hover {
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
 }
+
 .social_media img:hover {
     border: #BFA2DB solid 1px;
     background-color: #BFA2DB;
@@ -173,109 +186,94 @@ a:hover {
 
 /* ABOUT FORMATTING */
 
-.about-section {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 100px;
-    flex-direction: column;
+#about {
     background-color: #F3F1F5;
+    height: 130vh;
+    width: 100vw;
+    padding-top: 130px;
+    justify-content: flex-start;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    padding-bottom: 50px;
 }
 
-.about-section_container {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.home-text-skills {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    width: 100%;
-}
-
-#about-section_text, .about-skills {
-    flex: 1;
-    max-width: 600px;
+#about-text h2, #about-text p, button {
+    text-align: left;
+    justify-items: left;
 }
 
 /* ABOUT TITLE FORMATTING */
+
 .about-section_container h2 {
     font-size: 50px;
-    font-family: "Poppins", sans-serif;
-    margin-top: 35px;
     margin-bottom: 10px;
     font-weight: 500;
     color: #424141;
     letter-spacing: 2px;
-    text-align: center;
-}
-
-#about-section_text {
-    margin-right: 70px;
 }
 
 .about-section_container hr {
-    width: 60%;
+    width: 100%;
     height: 2px;
-    background-color: #BFA2DB;
-    padding: 3px;
+    background-color: #79018C;
+    padding-top: 5px;
     border-radius: 10px;
+    margin-top: 15px;
 }
 
 .about-section_container p {
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: #77737b;
-    letter-spacing: 1px;
-    text-align: center;
+    font-size: 18px;
     margin-top: 30px;
+    font-weight: 500;
+    color: #4b4a4a;
+    letter-spacing: 2px;
 }
 
-#about-section_text h2 {
-    font-size: 25px;
-    font-family: "Poppins", sans-serif;
+/* ABOUT TEXT FORMATTING */
+
+#about-text h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
     font-weight: 600;
     color: #424141;
     letter-spacing: 2px;
+    margin-top: 30px;
     text-align: left;
-    margin-top: 35px;
 }
 
-#about-section_text p {
+#about-text p {
     font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #5f5c62;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 45px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-bottom: 30px;
 }
 
-#about-section_text a {
+#div-button button {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    text-decoration: none;
+    outline: none;
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
     letter-spacing: 2px;
     line-height: 1.5;
     font-weight: 600;
     color: white;
-    text-align: left;
     border: #BFA2DB solid 2px;
     background-color: #BFA2DB;
     border-radius: 10px;
     padding: 7px 25px;
     transition: all 0.2s ease-in-out;
-    text-decoration: none;
 }
 
-#about-section_text a:hover {
+#div-button a {
+    text-decoration: none;
+    outline: none;
+}
+
+#div-button button:hover {
     color: white;
     font-size: 20px;
     border: #BFA2DB solid 2px;
@@ -287,32 +285,83 @@ a:hover {
 
 /* Skills formatting */
 
+#skills-container {
+    display: flex;
+    justify-content: center;
+}
+
 #about-skills h3 {
-    font-size: 25px;
-    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    margin-bottom: 70px;
     font-weight: 600;
     color: #424141;
     letter-spacing: 2px;
-    margin: 35px 0 40px 180px;
+    margin-top: 30px;
+    text-align: center;
 }
 
-#about-skills a {
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
+#about-skills .skill {
+    font-size: 18px;
+    font-weight: 500;
+    color: #424141;
     letter-spacing: 2px;
-    line-height: 1.5;
-    font-weight: 400;
-    color: white;
     border: #BFA2DB solid 2px;
     border-radius: 10px;
     background-color: #BFA2DB;
-    padding: 5px;
-    margin: 0 20px 0 0;
-    text-decoration: none;
 }
 
-#about-skills div {
-    margin: 10px 0 30px 180px;
+#about-skills .skill-n {
+    font-size: 18px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 2px;
+    border: #BFA2DB solid 2px;
+    border-radius: 10px;
+    background-color: #BFA2DB;
+}
+
+
+#about-skills .skill-j {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 2px;
+    border: #BFA2DB solid 2px;
+    border-radius: 10px;
+    background-color: #BFA2DB;
+    text-align: center;
+    width: 130%;
+    transform: translateX(-20px);
+}
+
+#about-skills .skill-c {
+    font-size: 18px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 2px;
+    border: #BFA2DB solid 2px;
+    border-radius: 10px;
+    background-color: #BFA2DB;
+    text-align: center;
+    width: 100%;
+    transform: translateX(15px);
+}
+
+#about-skills .skill-css {
+    font-size: 18px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 2px;
+    border: #BFA2DB solid 2px;
+    border-radius: 10px;
+    background-color: #BFA2DB;
+    text-align: center;
+    width: 100%;
+    transform: translateX(-20px);
 }
 
 /* PROJECT FORMATTING */
@@ -345,10 +394,10 @@ a:hover {
     text-align: center;
 }
 
-.projects-section_container hr{
-    width: 10%;
+.projects-section_container hr {
+    width: 100%;
     height: 2px;
-    background-color: #BFA2DB;
+    background-color: purple;
     padding-top: 5px;
     border-radius: 10px;
 }
