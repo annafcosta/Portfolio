@@ -292,11 +292,11 @@ a:hover {
 
 #about-skills h3 {
     font-size: 22px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     font-weight: 600;
     color: #424141;
     letter-spacing: 2px;
-    margin-top: 30px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -412,4 +412,31 @@ a:hover {
     margin-top: 30px;
 }
 
+/* CONTACT FORMATTING */
 
+.contact-section {
+    display: flex;
+    background-color: #F3F1F5;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+/* FOOTER FORMATTING */
+.container-footer {
+    font-family: "Poppins", sans-serif;
+    color: #424141;
+    font-size: 15px;
+    display: flex;
+    background-color: #BFA2DB;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-footer p {
+    font-size: 10px;
+}
