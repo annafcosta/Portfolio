@@ -279,16 +279,11 @@ a:hover {
     border: #BFA2DB solid 2px;
     background-color: #BFA2DB;
     border-radius: 10px;
-    padding: 9px 28px;
+    padding: 7px 30px;
     cursor: pointer;
 }
 
 /* Skills formatting */
-
-#skills-container {
-    display: flex;
-    justify-content: center;
-}
 
 #about-skills h3 {
     font-size: 22px;
@@ -300,32 +295,7 @@ a:hover {
     text-align: center;
 }
 
-#about-skills .skill {
-    font-size: 18px;
-    font-weight: 500;
-    color: #424141;
-    letter-spacing: 2px;
-    border: #BFA2DB solid 2px;
-    border-radius: 10px;
-    background-color: #BFA2DB;
-}
-
-#about-skills .skill-n {
-    font-size: 18px;
-    font-weight: 500;
-    color: #424141;
-    letter-spacing: 2px;
-    border: #BFA2DB solid 2px;
-    border-radius: 10px;
-    background-color: #BFA2DB;
-}
-
-
-#about-skills .skill-j {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#skills-container .p-3{
     font-size: 18px;
     font-weight: 500;
     color: #424141;
@@ -334,42 +304,14 @@ a:hover {
     border-radius: 10px;
     background-color: #BFA2DB;
     text-align: center;
-    width: 130%;
-    transform: translateX(-20px);
-}
-
-#about-skills .skill-c {
-    font-size: 18px;
-    font-weight: 500;
-    color: #424141;
-    letter-spacing: 2px;
-    border: #BFA2DB solid 2px;
-    border-radius: 10px;
-    background-color: #BFA2DB;
-    text-align: center;
-    width: 100%;
-    transform: translateX(15px);
-}
-
-#about-skills .skill-css {
-    font-size: 18px;
-    font-weight: 500;
-    color: #424141;
-    letter-spacing: 2px;
-    border: #BFA2DB solid 2px;
-    border-radius: 10px;
-    background-color: #BFA2DB;
-    text-align: center;
-    width: 100%;
-    transform: translateX(-20px);
 }
 
 /* PROJECT FORMATTING */
 
 .projects-section {
     display: flex;
-    background-color: #f2ecf8;
-    height: 100vh;
+    background-color: #F6F5F5;
+    min-height: 100vh;
     width: 100vw;
     justify-content: flex-start;
     align-items: center;
@@ -383,6 +325,12 @@ a:hover {
     margin: 0 auto;
 }
 
+#project-1 {
+    max-width: 1200px;
+    margin-top: 80px;
+}
+
+/* PROJECT text formatting */
 .projects-section h2 {
     font-size: 50px;
     font-family: "Poppins", sans-serif;
@@ -403,7 +351,7 @@ a:hover {
 }
 
 .projects-section p {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     color: #5f5c62;
@@ -412,18 +360,62 @@ a:hover {
     margin-top: 30px;
 }
 
-/* CONTACT FORMATTING */
-
-.contact-section {
-    display: flex;
-    background-color: #F3F1F5;
-    height: 100vh;
-    width: 100vw;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 100px;
-    flex-direction: column;
+#project-1 img {
+    width: 1000px;
+    height: auto;
+    border: #BFA2DB solid 12px;
+    border-radius: 10px;
 }
+
+.project-description {
+    padding-left: 80px;
+    text-align: left;
+}
+
+.project-description h3 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 1px;
+}
+
+.project-description p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 2px;
+}
+
+.ler-mais {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
+    padding: 7px 25px;
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+}
+
+.project-description button:hover {
+    color: white;
+    font-size: 20px;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
+    padding: 7px 30px;
+}
+
+#project-2 {
+    margin-top: 150px;
+}
+
+/* CONTACT FORMATTING */
 
 /* FOOTER FORMATTING */
 .container-footer {
