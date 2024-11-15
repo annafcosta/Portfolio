@@ -490,7 +490,36 @@ a:hover {
     margin-top: 30px;
 }
 
-/* FOOTER FORMATTING */
+#contact-container {
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-section .col-md-3 {
+    min-width: 300px;
+    min-height: 250px;
+}
+
+#whatsapp, #e-mail {
+    width: 150px;
+    height: auto;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+#address {
+    width: auto;
+    height: 150px;
+    opacity: 0.8;
+    margin-bottom: 31px;
+}
+
+
+
+
+
+
+    /* FOOTER FORMATTING */
 .container-footer {
     font-family: "Poppins", sans-serif;
     color: #424141;
@@ -510,22 +539,20 @@ a:hover {
 
 
 
-/* HIDEN DIV - FACELITA */
-.escondido {
-    display: none;
-}
+/* HIDEN DIV */
 
 .popup {
     position: fixed;
     top: 50%;
     left: 50%;
+    width: 100%;
+    height: 100%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
+    background-color: #F3F1F5;
+    padding: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    width: 80%;
-    max-width: 500px;
+    max-width: 100%;
     text-align: center;
 }
