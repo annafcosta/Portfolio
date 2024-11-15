@@ -388,7 +388,7 @@ a:hover {
     letter-spacing: 2px;
 }
 
-.ler-mais {
+.read-more {
     letter-spacing: 2px;
     line-height: 1.5;
     font-weight: 600;
@@ -504,4 +504,28 @@ a:hover {
 
 .container-footer p {
     font-size: 10px;
+}
+
+
+
+
+
+/* HIDEN DIV - FACELITA */
+.escondido {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
 }
