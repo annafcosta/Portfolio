@@ -446,7 +446,7 @@ a:hover {
 .contact-section {
     display: flex;
     background-color: #F3F1F5;
-    min-height: 100vh;
+    min-height: 85%;
     width: 100vw;
     justify-content: flex-start;
     align-items: center;
@@ -456,7 +456,7 @@ a:hover {
 
 .contact-section_container {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -492,27 +492,57 @@ a:hover {
 
 #contact-container {
     margin-top: 100px;
+    display: flex;
+}
+
+#contact-container h4 {
+    font-size: 22px;
     font-family: "Poppins", sans-serif;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #424141;
+}
+
+#contact-container hr {
+    height: 1px;
+    background-color: purple;
+    padding-top: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+}
+
+#contact-container p {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #424141;
 }
 
 .contact-section .col-md-3 {
-    min-width: 300px;
+    min-width: 400px;
     min-height: 250px;
 }
 
 #whatsapp, #e-mail {
     width: 150px;
     height: auto;
-    opacity: 0.8;
+    opacity: 0.77;
     margin-bottom: 30px;
 }
 
 #address {
     width: auto;
     height: 150px;
-    opacity: 0.8;
+    opacity: 0.77;
     margin-bottom: 30px;
 }
+
+
 
 
 
