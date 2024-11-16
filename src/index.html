@@ -116,8 +116,6 @@
         </div>
     </div>
 </section>
-
-
 <section id="projects" class="px-4 text-center projects-section">
     <div class="projects-section_container">
         <h2>PROJETOS</h2>
@@ -141,7 +139,6 @@
             <button id="read-more-facelita" class="read-more" data-target="popupProject1">LER MAIS</button>
         </div>
     </div>
-
     <!-- Landing Page -->
     <div class="d-flex justify-content-center align-items-center gap-5" id="project-2">
         <!-- Image project -->
@@ -158,7 +155,6 @@
             <button id="read-more-landing" class="read-more" data-target="popupProject2">LER MAIS</button>
         </div>
     </div>
-
     <!-- Quantum Project -->
     <div class="d-flex justify-content-center align-items-center gap-5" id="project-3">
         <!-- Image project -->
@@ -167,48 +163,44 @@
         </div>
         <!-- Text Project -->
         <div class="project-description">
-            <h3>Landing Page</h3>
-            <p>Desenvolvi uma landing page para colocar em prática meus conhecimentos em relação ao<br>
-                desenvolvimento web. O projeto demonstra habilidades de estruturação de conteúdo <br>
-                e interatividade básica para criar uma experiência visual atraente.<br>
+            <h3>Quantum Computer</h3>
+            <p>O trabalho compara abordagens clássicas e quânticas, adaptando métodos de seleção de<br>
+                características em aprendizado supervisionado.<br>
             </p>
             <button id="read-more-quantum" class="read-more" data-target="popupProject3">LER MAIS</button>
         </div>
     </div>
-
-
 </section>
-
-
 <section id="contact" class="contact-section px-4 text-center">
     <div class="contact-section_container">
         <h2>Contato</h2>
         <hr>
         <p>Informações para contato.</p>
     </div>
-
     <div id="contact-container" class="row justify-content-center gap-5">
         <!-- WhatsApp Div -->
         <div class="col-md-3 text-center p-3">
             <img id="whatsapp" src="./images/media/whatsapp.256x256.png" class="img-fluid" alt="Imagem 1">
-            <p class="mt-2">Div 1</p>
+            <h4 class="mt-2">Telefone</h4>
+            <hr>
+            <p>+55 (31) 99196-8178</p>
         </div>
         <!-- Address Div -->
         <div class="col-md-3 text-center p-3">
             <img id="address" src="./images/media/alternate-map-marked.256x228.png" class="img-fluid" alt="Imagem 1">
-            <p id="text-address" class="mt-2">Div 2</p>
+            <h4 id="text-address" class="mt-2">Localização</h4>
+            <hr>
+            <p>Belo Horizonte - MG</p>
         </div>
         <!-- E-mail Div -->
         <div class="col-md-3 text-center p-3">
             <img id="e-mail" src="./images/media/email-circle-fill.512x512.png" class="img-fluid" alt="Imagem 1">
-            <p class="mt-2">Div 3</p>
+            <h4 class="mt-2">E-mail</h4>
+            <hr>
+            <p>luisaferreiraanna@gmail.com</p>
         </div>
     </div>
-
-
 </section>
-
-
 <div class="container-footer">
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -220,16 +212,29 @@
         <p class="text-center text-body-secondary">&copy; 2024. Made by Anna Ferreira</p>
     </footer>
 </div>
+
+
+
 <!-- Hidden Div - FaceLita -->
 <div id="popupProject1" class="hidden popup">
-    <h2>Mais sobre a Landing Page</h2>
-    <p>Precisa escrever alguma coisa.</p>
+    <div class="title-facelita">
+        <h2>FACELITA</h2>
+        <hr>
+        <p>Projeto vencendor da 12ª Edição do programa Campus Mobile, na categoria saúde.</p>
+        <a href="https://www.institutoclaro.org.br/nossas-novidades/confira-os-vencedores-da-12a-edicao-do-campus-mobile/#:~:text=Os%20vencedores%20da%2012%C2%AA%20edi%C3%A7%C3%A3o%20viajar%C3%A3o%20a%20S%C3%A3o%20Francisco%20e,participar%20de%20palestras%20e%20workshops."
+           target="_blank">LER MAIS</a>
+    </div>
+    <div class="video-facelita">
+        <img src="#" class="img-fluid rounded shadow" alt="Video promocional do FAceLita">
+    </div>
     <button class="close" data-target="popupProject1">Fechar</button>
 </div>
 <!-- Hidden Div - Landing Page -->
 <div id="popupProject2" class="hidden popup">
-    <h2>Mais sobre o Projeto 2</h2>
-    <p>Detalhes sobre o projeto 2.</p>
+    <div class="landing-page-title">
+        <h2>Landing Page</h2>
+        <p>Detalhes sobre o projeto 2.</p>
+    </div>
     <button class="close" data-target="popupProject2">Fechar</button>
 </div>
 <!-- Hidden Div - Quantum -->
@@ -238,7 +243,6 @@
     <p>Detalhes sobre o projeto 2.</p>
     <button class="close" data-target="popupProject3">Fechar</button>
 </div>
-
 <script src="./script.js" defer></script>
 </body>
 </html>
