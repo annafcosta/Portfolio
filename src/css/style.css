@@ -542,14 +542,7 @@ a:hover {
     margin-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-    /* FOOTER FORMATTING */
+/* FOOTER FORMATTING */
 .container-footer {
     font-family: "Poppins", sans-serif;
     color: #424141;
@@ -565,24 +558,132 @@ a:hover {
     font-size: 10px;
 }
 
-
-
-
-
 /* HIDEN DIV */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    z-index: 999; /* Deve estar abaixo da popup */
+    display: none; /* Inicialmente escondido */
+}
 
 .popup {
     position: fixed;
-    top: 50%;
+    top: 12%;
     left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    background-color: #F3F1F5;
-    padding: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, 0);
+    width: 85%;
+    max-height: 85vh;
+    padding: 20px;
+    background-color: #F6F5F5;
     z-index: 1000;
-    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    border: 1px solid #F6F5F5;
+    border-radius: 8px;
+}
+
+button.close {
+    align-self: flex-end;
+    background-color: #BFA2DB;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* HIDEN FACELITA-DIV */
+
+.title-facelita {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 45%;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.title-facelita h2 {
+    font-size: 55px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #424141;
+    letter-spacing: 4px;
     text-align: center;
 }
+
+.title-facelita hr {
+    height: 1px;
+    background-color: purple;
+    padding-top: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 45%;
+    margin: auto;
+}
+
+.title-facelita p {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    color: #424141;
+    text-align: center;
+}
+
+.read-more-facelita {
+    font-weight: 600;
+    color: white;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    padding: 12px 60px;
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+}
+
+.read-more-facelita:hover {
+    color: white;
+    font-size: 20px;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
+    padding: 15px 70px;
+    text-align: center;
+}
+
+/* VIDEO FACELITA-DIV */
+
+#video-facelita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 30vh;
+    margin-bottom: 50px;
+}
+
+#video-facelita .ratio {
+    width: 55%;
+    height: auto;
+    border: #BFA2DB solid 13px;
+    border-radius: 8px;
+}
+
+
+
+
+
