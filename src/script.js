@@ -15,15 +15,19 @@ document.addEventListener("scroll", function () {
 // Functions to enable and disable project information
 function showPopup(targetId) {
     const popup = document.getElementById(targetId);
-    if (popup) {
-        popup.classList.remove("hidden"); // Show the popup
+    const overlay = document.getElementById('overlay');
+    if (popup && overlay) {
+        popup.classList.remove("hidden");
+        overlay.style.display = "block";
     }
 }
 
 function hidePopup(targetId) {
     const popup = document.getElementById(targetId);
-    if (popup) {
+    const overlay = document.getElementById('overlay');
+    if (popup && overlay) {
         popup.classList.add("hidden");
+        overlay.style.display = "none";
     }
 }
 
@@ -31,7 +35,7 @@ const openButtons = document.querySelectorAll(".read-more");
 openButtons.forEach(button => {
     button.addEventListener("click", () => {
         const targetId = button.getAttribute("data-target");
-        showPopup(targetId); // Call the function to show the popup
+        showPopup(targetId);
     });
 });
 
@@ -42,4 +46,12 @@ closeButtons.forEach(button => {
         hidePopup(targetId);
     });
 });
+
+document.getElementById('overlay').addEventListener("click", () => {
+    const popup = document.querySelector(".popup:not(.hidden)");
+    if (popup) {
+        hidePopup(popup.id);
+    }
+});
+
 
