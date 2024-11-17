@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="./src/css/style.css"/>
     <title>Portifolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -32,16 +32,16 @@
     </div>
     <div class="social_media hidden">
         <a href="https://www.instagram.com/anna_afcosta/" target="_blank" class="social-icon">
-            <img class="instagram" src="./images/media/logo-instagram.512x512.png" alt="Instagram">
+            <img class="instagram" src="./src/images/media/logo-instagram.512x512.png" alt="Instagram">
         </a>
         <a href="https://github.com/annafcosta" target="_blank" class="social-icon">
-            <img class="git" src="./images/media/github.512x499.png" alt="GitHub"/>
+            <img class="git" src="src/images/media/github.512x499.png" alt="GitHub"/>
         </a>
         <a href="https://www.linkedin.com/in/anna-lu%C3%ADsa-ferreira-2a6436290/" target="_blank" class="social-icon">
-            <img class="linkedin" src="./images/media/rounded-linkedin.512x511.png" alt="LinkedIn"/>
+            <img class="linkedin" src="./src/images/media/rounded-linkedin.512x511.png" alt="LinkedIn"/>
         </a>
         <a href="mailto:anna.l.costa@ufv.br" target="_blank" class="social-icon">
-            <img class="email" src="./images/media/email-circle-fill.512x512.png" alt="E-mail"/>
+            <img class="email" src="./src/images/media/email-circle-fill.512x512.png" alt="E-mail"/>
         </a>
     </div>
 </section>
@@ -127,7 +127,7 @@
     <div class="d-flex justify-content-center align-items-center gap-5" id="project-1">
         <!-- Image project -->
         <div class="project-image">
-            <img src="./images/projects_images/facelita.png" class="img-fluid" alt="Main of FaceLita">
+            <img src="./src/images/projects_images/facelita.png" class="img-fluid" alt="Main of FaceLita">
         </div>
         <!-- Text Project -->
         <div class="project-description">
@@ -143,7 +143,7 @@
     <div class="d-flex justify-content-center align-items-center gap-5" id="project-2">
         <!-- Image project -->
         <div class="project-image">
-            <img src="./images/projects_images/landing_page.jpg" class="img-fluid" alt="Main of FaceLita">
+            <img src="src/images/projects_images/landing_page.jpg" class="img-fluid" alt="Main of FaceLita">
         </div>
         <!-- Text Project -->
         <div class="project-description">
@@ -158,7 +158,7 @@
     <div class="d-flex justify-content-center align-items-center gap-5" id="project-3">
         <!-- Image project -->
         <div class="project-image">
-            <img src="./images/projects_images/output.png" class="img-fluid" alt="Main of FaceLita">
+            <img src="src/images/projects_images/output.png" class="img-fluid" alt="Main of FaceLita">
         </div>
         <!-- Text Project -->
         <div class="project-description">
@@ -179,21 +179,21 @@
     <div id="contact-container" class="row justify-content-center gap-5">
         <!-- WhatsApp Div -->
         <div class="col-md-3 text-center p-3">
-            <img id="whatsapp" src="./images/media/whatsapp.256x256.png" class="img-fluid" alt="Imagem 1">
+            <img id="whatsapp" src="src/images/media/whatsapp.256x256.png" class="img-fluid" alt="Imagem 1">
             <h4 class="mt-2">Telefone</h4>
             <hr>
             <p>+55 (31) 99196-8178</p>
         </div>
         <!-- Address Div -->
         <div class="col-md-3 text-center p-3">
-            <img id="address" src="./images/media/alternate-map-marked.256x228.png" class="img-fluid" alt="Imagem 1">
+            <img id="address" src="src/images/media/alternate-map-marked.256x228.png" class="img-fluid" alt="Imagem 1">
             <h4 id="text-address" class="mt-2">Localização</h4>
             <hr>
             <p>Belo Horizonte - MG</p>
         </div>
         <!-- E-mail Div -->
         <div class="col-md-3 text-center p-3">
-            <img id="e-mail" src="./images/media/email-circle-fill.512x512.png" class="img-fluid" alt="Imagem 1">
+            <img id="e-mail" src="src/images/media/email-circle-fill.512x512.png" class="img-fluid" alt="Imagem 1">
             <h4 class="mt-2">E-mail</h4>
             <hr>
             <p>luisaferreiraanna@gmail.com</p>
@@ -225,7 +225,7 @@
 
     <div class="container mt-5" id="video-facelita">
         <div class="ratio ratio-16x9">
-            <video src="./images/projects_images/facelita_video.mp4" controls autoplay muted>
+            <video src="src/images/projects_images/facelita_video.mp4" controls autoplay muted>
             </video>
         </div>
     </div>
@@ -278,9 +278,6 @@
             </div>
         </div>
     </div>
-
-
-
     <button class="close" data-target="popupProject1">Fechar</button>
 </div>
 <!-- Hidden Div - Landing Page -->
@@ -297,6 +294,6 @@
     <p>Detalhes sobre o projeto 2.</p>
     <button class="close" data-target="popupProject3">Fechar</button>
 </div>
-<script src="./script.js" defer></script>
+<script src="./src/script.js" defer></script>
 </body>
 </html>
