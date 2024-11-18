@@ -588,15 +588,6 @@ a:hover {
     border-radius: 8px;
 }
 
-button.close {
-    align-self: flex-end;
-    background-color: #BFA2DB;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 4px;
-}
 
 /* HIDEN FACELITA-DIV */
 
@@ -728,10 +719,10 @@ button.close {
     color: #424141;
     letter-spacing: 1px;
     margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
-.tools-facelita .p-1 {
+.tools-facelita .p-2 {
     font-size: 16px;
     font-weight: 500;
     color: #424141;
@@ -741,4 +732,63 @@ button.close {
     background-color: #BFA2DB;
     text-align: center;
     margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.button-facelita h5 {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #424141;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-left: 150px;
+}
+
+#game {
+    margin-left: 150px;
+    margin-right: 30px;
+    text-decoration: none;
+    outline: none;
+}
+
+.button-facelita button {
+    font-weight: 600;
+    color: white;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    padding: 10px 25px;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.button-facelita button:hover {
+    color: #BFA2DB;
+    font-size: 18px;
+    border: #BFA2DB solid 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#close-facelita {
+    font-weight: 600;
+    color: #BFA2DB;
+    border: #BFA2DB solid 2px;
+    background-color: white;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    padding: 10px 25px;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+#close-facelita:hover {
+    color: white;
+    font-size: 18px;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
 }
