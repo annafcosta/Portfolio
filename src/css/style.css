@@ -792,3 +792,241 @@ a:hover {
     background-color: #BFA2DB;
     border-radius: 10px;
 }
+
+/* HIDEN LANDINGPAGE-DIV */
+
+.landing-page-title {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.landing-page-title h2 {
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #424141;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.landing-page-title hr {
+    height: 1px;
+    background-color: purple;
+    padding-top: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 45%;
+    margin: auto;
+}
+
+.landing-page-title p {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    color: #424141;
+    text-align: center;
+}
+
+.landing-page-title a {
+    font-weight: 600;
+    color: white;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    padding: 16px 55px;
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+    outline: none;
+    text-decoration: none;
+}
+
+.landing-page-title a:hover {
+    color: white;
+    font-size: 20px;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
+    padding: 17px 60px;
+    text-align: center;
+}
+
+/* Text Landing-Page */
+
+.text-land {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 80px;
+}
+
+.text-land h3 {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #424141;
+    letter-spacing: 1px;
+}
+
+.text-land p {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 1px;
+}
+
+.text-land a {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #b89cd3;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.tools-land-page h4 {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #424141;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.tools-land-page .p-2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #424141;
+    letter-spacing: 2px;
+    border: #BFA2DB solid 2px;
+    border-radius: 10px;
+    background-color: #BFA2DB;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.button-landing a {
+    margin-left: 150px;
+    margin-right: 30px;
+    text-decoration: none;
+    outline: none;
+}
+
+.button-landing h5 {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #424141;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-left: 150px;
+}
+
+.button-landing button {
+    font-weight: 600;
+    color: white;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    padding: 10px 25px;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.button-landing button:hover {
+    color: #BFA2DB;
+    font-size: 18px;
+    border: #BFA2DB solid 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+#close-land {
+    font-weight: 600;
+    color: #BFA2DB;
+    border: #BFA2DB solid 2px;
+    background-color: white;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    padding: 10px 25px;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+#close-land:hover {
+    color: white;
+    font-size: 18px;
+    border: #BFA2DB solid 2px;
+    background-color: #BFA2DB;
+    border-radius: 10px;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: 600px;
+    height: auto;
+    border: #BFA2DB solid 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* responsive for landing page images */
+@media (max-width: 600px) {
+    .photo-gallery img {
+        width: 70%;
+    }
+}
+
+/* responsive to skills */
+.div-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.h-skill {
+    display: flex;
+    gap: 10px;
+}
+
+.col {
+    flex: 1;
+    min-width: 160px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
